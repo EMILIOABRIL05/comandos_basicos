@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Servicios FISEI: biblioteca virtual, laboratorios y administracion de redes." />
+    <title>Servicios - FISEI</title>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at top left, #dbeafe 0, transparent 30%),
+          linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+      }
+
+      .hero-panel {
+        background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #38bdf8 100%);
+        color: #fff;
+        border-radius: 1.5rem;
+        box-shadow: 0 1.5rem 3rem rgba(15, 23, 42, 0.18);
+      }
+
+      .service-card {
+        border: 0;
+        border-radius: 1.25rem;
+        box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 1.25rem 2.5rem rgba(15, 23, 42, 0.14);
+      }
+
+      .service-icon {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body class="py-4">
+    <main class="container py-4">
+      <section class="hero-panel p-4 p-md-5 mb-4">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="badge text-bg-light text-primary mb-3">Servicios FISEI</span>
+            <h1 class="display-5 fw-bold">Explora y accede a nuestros servicios académicos</h1>
+            <p class="lead mb-4">
+              Usa el buscador para encontrar un servicio, navega por las secciones y entra directamente al que necesites.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-light btn-lg" href="#servicios">Ver servicios</a>
+              <a class="btn btn-outline-light btn-lg" href="index.html">Volver al inicio</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bg-white text-dark rounded-4 p-3 shadow-sm">
+              <label for="serviceSearch" class="form-label fw-semibold">Buscar servicio</label>
+              <input id="serviceSearch" class="form-control form-control-lg" type="search" placeholder="Escribe biblioteca, laboratorio o redes" />
+              <div class="form-text text-secondary mt-2">Filtra los servicios en tiempo real.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="mb-4">
+        <div class="row g-4" id="servicesGrid">
+          <div class="col-md-4 service-item" data-service="biblioteca virtual ebooks articulos recursos">
+            <div class="card service-card h-100">
+              <div class="card-body p-4">
+                <img src="img/e-book-aprendizaje-en-linea-educacion-conocimiento-grafico-1024x684.jpg" class="service-icon mb-3" alt="Biblioteca virtual" />
+                <h2 class="h4">Biblioteca Virtual</h2>
+                <p class="text-secondary">
+                  Accede a libros digitales, revistas cientificas y recursos academicos en linea para apoyar tu aprendizaje.
+                </p>
+                <ul class="small text-secondary ps-3">
+                  <li>Consulta de material digital</li>
+                  <li>Apoyo para investigaciones</li>
+                  <li>Recursos de estudio 24/7</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                <a class="btn btn-primary w-100" href="#biblioteca">Abrir detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 service-item" data-service="laboratorios practicas equipos tecnologia">
+            <div class="card service-card h-100">
+              <div class="card-body p-4">
+                <img src="img/laboratorio.jpg" class="service-icon mb-3" alt="Laboratorios" />
+                <h2 class="h4">Laboratorios</h2>
+                <p class="text-secondary">
+                  Realiza practicas en espacios equipados con tecnologia moderna para fortalecer tus competencias profesionales.
+                </p>
+                <ul class="small text-secondary ps-3">
+                  <li>Practicas guiadas</li>
+                  <li>Equipos especializados</li>
+                  <li>Entornos de aprendizaje seguro</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                <a class="btn btn-primary w-100" href="#laboratorios">Abrir detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 service-item" data-service="administracion redes redes seguridad conectividad">
+            <div class="card service-card h-100">
+              <div class="card-body p-4">
+                <img src="img/administrador-red-destacando-nodos-conexiones-diagrama-topologia_857340-6665.jpg" class="service-icon mb-3" alt="Administracion de redes" />
+                <h2 class="h4">Administracion de Redes</h2>
+                <p class="text-secondary">
+                  Aprende a disenar, configurar y asegurar infraestructuras de red para entornos empresariales y academicos.
+                </p>
+                <ul class="small text-secondary ps-3">
+                  <li>Configuracion de redes</li>
+                  <li>Monitoreo y seguridad</li>
+                  <li>Soporte tecnico especializado</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                <a class="btn btn-primary w-100" href="#redes">Abrir detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row g-4 mb-4">
+        <div class="col-lg-4" id="biblioteca">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <h3 class="h4">Biblioteca Virtual</h3>
+            <p class="mb-0">Ingresa al catálogo digital, consulta documentos y encuentra material de estudio para tus asignaturas.</p>
+          </div>
+        </div>
+        <div class="col-lg-4" id="laboratorios">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <h3 class="h4">Laboratorios</h3>
+            <p class="mb-0">Revisa disponibilidad, practica con equipos y organiza sesiones de aprendizaje aplicado.</p>
+          </div>
+        </div>
+        <div class="col-lg-4" id="redes">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <h3 class="h4">Administracion de Redes</h3>
+            <p class="mb-0">Gestiona infraestructura, visualiza topologias y solicita apoyo para conectividad y soporte.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-4">
+        <div class="p-4 p-md-5 bg-dark text-white rounded-4 shadow-sm">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h2 class="h3 mb-3">¿Dónde solicitar estos servicios?</h2>
+              <p class="lead mb-3">
+                Acude a la ventanilla de atención de la Facultad o a la Secretaría Académica dentro del campus FISEI para pedir información, reservas y acceso a los servicios.
+              </p>
+              <p class="mb-0 text-white-50">
+                Si deseas, después puedo reemplazar este texto con la dirección exacta, horario y teléfono de contacto.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <div class="bg-white text-dark rounded-4 p-4 h-100">
+                <h3 class="h5">Atención presencial</h3>
+                <ul class="mb-0 ps-3">
+                  <li>Secretaría Académica</li>
+                  <li>Ventanilla de atención estudiantil</li>
+                  <li>Campus FISEI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="d-flex flex-wrap gap-3 justify-content-between align-items-center pt-3 border-top">
+        <p class="mb-0 text-secondary">FISEI - Servicios academicos</p>
+        <a class="btn btn-outline-primary" href="index.html">Volver al inicio</a>
+      </footer>
+    </main>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const searchInput = document.getElementById('serviceSearch');
+      const serviceItems = document.querySelectorAll('.service-item');
+
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.trim().toLowerCase();
+
+        serviceItems.forEach((item) => {
+          const matches = item.dataset.service.includes(query);
+          item.classList.toggle('d-none', query !== '' && !matches);
+        });
+      });
+    </script>
+  </body>
+</html>
